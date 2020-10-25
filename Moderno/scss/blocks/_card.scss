@@ -1,0 +1,112 @@
+.card {
+	flex-basis: calc(442px - 30px);
+	margin-left: 30px;
+	box-shadow: 0px 1px 2px #cdd6debf;
+	background-color: #fff;
+	margin-bottom: 30px;
+	// .card__img
+
+	&__img {
+		overflow: hidden;
+		transition: 0.4s ease;
+		background: center/cover no-repeat;
+		min-height: 250px;
+		display: block;
+	}
+
+	// .card__content
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 90px;
+		padding: 5px 31px;
+		border-bottom: 1px solid #e7ecf2;
+	}
+
+	// .card__name
+
+	&__name {
+		font-weight: 500;
+		max-width: 300px;
+		a {
+			display: block;
+		}
+	}
+
+	// .card__title
+
+	&__title {
+		font-size: 18px;
+		color: $text-black;
+		margin-bottom: 10px;
+	}
+
+	// .card__category
+
+	&__category {
+		font-size: 14px;
+		color: $green;
+	}
+
+	// .card__price
+
+	&__price {
+		font-size: 20px;
+		font-weight: 700;
+		color: $text-black;
+	}
+
+	// .card__info
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 31px;
+		min-height: 68px;
+	}
+
+	// .card__author
+
+	&__author {
+		display: flex;
+		align-items: center;
+		max-width: 300px;
+		span {
+			margin-right: 13px;
+			background: center/cover no-repeat;
+			min-height: 30px;
+			min-width: 30px;
+			border-radius: 50%;
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	// .card__nick
+
+	&__nick {
+		font-size: 14px;
+		font-weight: 500;
+		color: $text;
+	}
+
+	// .card__star
+
+	&__star {
+		color: #b0bec5;
+		font-size: 12px;
+		line-height: 15px;
+		display: flex;
+		align-items: center;
+		.rate-star {
+			margin-right: 13px;
+			padding-bottom: 2px;
+		}
+		span {
+			color: $text-black;
+		}
+	}
+}

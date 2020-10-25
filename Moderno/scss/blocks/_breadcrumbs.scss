@@ -1,0 +1,36 @@
+.breadcrumbs {
+	// .breadcrumbs__wrapper
+
+	&__wrapper {
+		padding: 47px 0 39px;
+	}
+
+	// .breadcrumbs__list
+
+	&__list {
+		li {
+			display: inline-block;
+			position: relative;
+			& + li {
+				padding-left: 24px;
+				&:before {
+					content: "-";
+					position: absolute;
+					color: $green;
+					left: 8px;
+				}
+			}
+			a {
+				transition: color 0.4s ease;
+				color: #b0bec5;
+				&:hover {
+					color: $text-black;
+				}
+			}
+			&:last-child a,
+			span {
+				color: $text-black;
+			}
+		}
+	}
+}
