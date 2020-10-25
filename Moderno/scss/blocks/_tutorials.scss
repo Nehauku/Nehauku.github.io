@@ -1,0 +1,39 @@
+.tutorials {
+	padding: 56px 0 176px;
+
+	// .tutorials__title
+
+	// .tutorials__erapper
+
+	&__wrapper {
+		padding-top: 54px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .tutorials__item
+
+	&__item {
+		max-width: 370px;
+		background: #f8f8f8;
+	}
+
+	// .tutorials__item-img
+
+	&__item-img {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+
+	// .tutorials__item-descr
+
+	&__item-descr {
+		text-align: center;
+		padding: 33px 0 35px;
+		font-size: 24px;
+		font-weight: 700;
+		color: $text-black;
+	}
+}

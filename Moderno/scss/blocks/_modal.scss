@@ -1,0 +1,118 @@
+.modal {
+	max-width: 730px;
+	width: 100%;
+	background-color: $green;
+	padding: 80px 0 109px;
+	display: none;
+	.fancybox-button svg {
+		display: none;
+	}
+	.fancybox-button.fancybox-close-small {
+		&:before {
+			position: absolute;
+			content: "\f00d";
+			font-size: 18px;
+			color: #fff;
+			font-family: "icomoon";
+			top: 10px;
+			right: 20px;
+			font-weight: 400;
+		}
+	}
+	// .modal__title
+
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.login {
+	max-width: 400px;
+	margin: 0 auto;
+	.modal__wrapper {
+		margin-bottom: 20px;
+	}
+
+	.modal__wrapper-btn {
+		margin-bottom: 25px;
+		display: flex;
+		.creat {
+			position: relative;
+			min-width: 250px;
+			background-color: #76ae36;
+			font-size: 18px;
+			color: #fff;
+			&:before {
+				position: absolute;
+				content: "\f044";
+				font-size: 18px;
+				left: 25px;
+				top: 15px;
+				font-family: "icomoon";
+				color: #fff;
+			}
+		}
+	}
+
+	input {
+		background-color: #76ae36;
+		color: #fff;
+		max-width: 400px;
+		width: 100%;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 0 15px 0 40px;
+		height: 43px;
+		transition: 0.4s ease;
+		&:focus {
+			box-shadow: 0 0 0 2px #fff;
+		}
+		&::placeholder {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+	.submit {
+		color: $text-black;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+		padding: 16px 5px 15px;
+		width: 139px;
+		background-color: #fff;
+		border: 1px solid #707070;
+		box-shadow: 0 2px 2px #76ae36;
+		margin-right: 10px;
+	}
+	a {
+		display: block;
+		font-size: 18px;
+		color: #ffffff;
+	}
+	.modal__pass,
+	.modal__user {
+		display: block;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "\f023";
+			left: 18px;
+			top: 14px;
+			font-family: "icomoon";
+			font-size: 14px;
+			color: #fff;
+		}
+	}
+	.modal__user:before {
+		content: "\f007";
+	}
+	.modal__user {
+		margin-bottom: 8px;
+	}
+}
