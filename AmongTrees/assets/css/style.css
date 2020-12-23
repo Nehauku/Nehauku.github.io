@@ -535,7 +535,7 @@ body {
 }
 
 .preview {
-    background: url("images/headerbg.png") center top/cover no-repeat;
+    background: url("../images/headerbg.png") center top/cover no-repeat;
     padding-bottom: 90px;
 }
 
